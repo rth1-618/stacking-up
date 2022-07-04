@@ -1,0 +1,23 @@
+.my-head{
+    background-color: rgb(241, 199, 151);
+    text-align: center;
+}
+
+.links{
+    background-color: rgb(10, 9, 4);
+    padding: 5px 17px;
+    align-items: center;
+    margin: 15px;
+    text-decoration: none;
+    font-size: medium;
+    color: azure;
+    border-radius: 5px;
+}
+
+.logo{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 130px;
+    height: 130px;
+}
