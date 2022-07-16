@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.app{
+    display: flex;
+    min-height: 100vh;
+}
 .my-head{
     background-color: rgb(241, 199, 151);
     text-align: center;
@@ -15,9 +24,50 @@
 }
 
 .logo{
-    position: relative;
+    position: absolute;
     top: 5px;
     left: 5px;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
+}
+nav{
+    background-color: chocolate;
+    color: white;
+    padding: 20px 0;
+}
+section{
+    margin: 15px;
+    padding: 5px 5px;
+}
+section:hover{
+    background-color: burlywood;
+}
+section.bld::first-line{
+    font-weight: bold;
+}
+
+.sidebar{
+    background: #dd9c04;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.quote{
+    color: white;
+    font-size: larger;
+    padding: 0.25em 10px;
+}
+.quote-head{
+    padding: 20px 10px;
+}
+.quote-head::first-letter{
+    font-size: 50px;
+}
+
+body.active .sidebar{
+    left: -225px;
 }
