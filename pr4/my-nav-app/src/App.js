@@ -12,11 +12,20 @@ import Services from "./components/Services";
 import Product from "./components/Product";
 import LoginForm from "./components/form/LoginForm";
 import SignUp from "./components/SignUp";
+import { useState } from "react";
+import Toggle from "./components/Navbar/Toggle";
+import SideMenu from "./components/Navbar/SideMenu";
 
 function App() {
+  const [navToggled, setNavToggled] = useState(false);
+  const alterToggle = () => {
+    setNavToggled(!navToggled);
+  };
   return (
     <Router>
-      <Navbar />
+      {/* <Toggle /> */}
+      <Navbar alterToggle={alterToggle} />
+      {navToggled ? <SideMenu alterToggle={alterToggle} /> : null}
       <Switch>
         <Route path="/" exact element={<Home />} />
         <Route path="/about" exact element={<About />} />

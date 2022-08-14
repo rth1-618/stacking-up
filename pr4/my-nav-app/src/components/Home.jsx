@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="cent">
       <h1>Home</h1>
-      <div>
+      <div className="mt-4">
         <p>For Sign in Form(pr 5), click Sign in</p>
       </div>
       <div>

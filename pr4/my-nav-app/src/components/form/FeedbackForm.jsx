@@ -98,7 +98,7 @@ const FeedbackForm = () => {
     // console.log("after", currIpError);
   };
   return (
-    <Container className="col-6 p-5 my-2 border border-dark rounded">
+    <Container className="col-md-6 p-5 my-2 border border-dark rounded">
       <Row>
         <h1>Contact</h1>
       </Row>
@@ -203,7 +203,13 @@ const FeedbackForm = () => {
         <button
           type="submit"
           className="btn btn-primary my-2"
-          disabled={Object.entries(ipError || {}).length > 0}
+          disabled={
+            !data.email ||
+            !data.facility ||
+            !data.rating ||
+            !data.review ||
+            Object.entries(ipError || {}).length > 0
+          }
         >
           Submit Feedback
         </button>

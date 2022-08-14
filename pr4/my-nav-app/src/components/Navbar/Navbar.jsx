@@ -8,8 +8,9 @@ import {
   NavBtnLink,
 } from "./NavbarElements.js";
 import logo from "../../logo192.png";
+import Toggle from "./Toggle.jsx";
 
-const Navbar = () => {
+const Navbar = ({ alterToggle }) => {
   return (
     <>
       <Nav>
@@ -18,7 +19,7 @@ const Navbar = () => {
           Parth
           {/* <h1>Logo</h1> */}
         </NavLink>
-        <Bars />
+        <Toggle alterToggle={alterToggle} />
         <NavMenu>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
