@@ -10,28 +10,159 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <title>My Profile v.Bootstrap</title>
+    <title>My Profile w.Bootstrap</title>
   </head>
   <body>
-    <div class="container">
-      <div class="btn btn-danger">Hey</div>
-      Hello World!
+    <div
+      style="
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+        font-size: larger;
+        -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+        font-weight: 800;
+        margin: 30px;
+      "
+    >
+      20CS093_Parth Tandel
     </div>
-      <nav class="navbar dark">
-        <div class="container-fluid">
-          <ul class="nav nav-pills">
-            li.nav-item
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            style="height: 80px; width: 80px"
+            alt="logo"
+            src="./assets/Half-Life-Lambda-Logo.jpg"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+              </ul>
+            </li>
           </ul>
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasSidebar"
+            role="button"
+            aria-controls="offcanvasSidebar"
+          >
+            Quote of the Day
+          </a>
         </div>
-      </nav>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error odio tempora nisi. Nulla assumenda sunt dolorum vero esse! Aliquam corrupti eaque obcaecati odit aut tempore necessitatibus voluptatibus ducimus vero. Error eaque non laboriosam aperiam officia dicta ad ut, distinctio rerum placeat ipsam mollitia numquam fugiat commodi inventore enim fugit!</div>
-        
-        <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis odit, voluptate corrupti eligendi officia a, nobis asperiores, doloremque consequatur impedit ipsum dolorem cumque facere. Sint, eius explicabo ipsa ducimus blanditiis tenetur aspernatur reiciendis sit laudantium dolorem, consectetur culpa asperiores suscipit?</div></div>
       </div>
+    </nav>
 
+    <div class="container me-auto">
+      <p class="row">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+        maxime at consequatur, laborum ex, ratione veritatis numquam natus
+        repellendus tenetur earum vitae officia amet! Illum porro doloremque
+        quos? Necessitatibus alias reprehenderit voluptatibus veritatis iure quo
+        voluptates cumque, tempora minus, impedit, recusandae odio consequatur
+        qui doloremque saepe quasi rem animi suscipit.
+      </p>
+      <p class="row">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique
+        itaque cumque? Delectus dolorum vero facere alias ab quia vitae
+        molestias aspernatur, nihil blanditiis repudiandae ratione laborum natus
+        odio est! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Laudantium culpa mollitia quaerat nisi, voluptate illo sunt voluptatem!
+        Esse dolores iure nisi, quo debitis neque autem quisquam ipsa, eveniet
+        in illum cum voluptatem natus. Debitis minus labore illum maxime ipsam
+        atque consequatur porro hic iste quibusdam repudiandae aliquam deserunt
+        provident sint, nemo voluptates. Adipisci accusantium quis, possimus qui
+        maxime atque necessitatibus nulla ea harum fugit numquam itaque voluptas
+        distinctio, vitae soluta modi explicabo eum reprehenderit ipsa sapiente!
+        Eaque quis exercitationem voluptates, mollitia sed pariatur ipsam,
+        quisquam porro quia eius laborum voluptatem tempore dolores soluta
+        explicabo ratione natus totam debitis neque asperiores.
+      </p>
+      <p class="row">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, eos.
+      </p>
+      <p class="row">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eos
+        aperiam ea totam est odio veritatis impedit eaque. Illum, asperiores.
+      </p>
+      <p class="row">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+        consequatur eius voluptatem ut aliquid natus delectus recusandae facere?
+        Possimus corrupti quaerat odio, culpa rem ab optio alias similique eaque
+        suscipit explicabo quo quibusdam architecto repudiandae rerum eos soluta
+        iusto fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iure soluta veniam possimus suscipit hic. Mollitia animi, dignissimos
+        deserunt nesciunt quos, atque totam ex harum officiis a blanditiis odio
+        tempora id magni suscipit?
+      </p>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasSidebar"
+        aria-labelledby="offcanvasSidebarLabel"
+      >
+        <div class="offcanvas-header text-light bg-dark">
+          <h5 class="offcanvas-title" id="offcanvasSidebarLabel">
+            Quote of the Day
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body bg-secondary">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            porro a voluptatum quia asperiores rerum consectetur qui.
+            <div class="align-right">~Some Philosopher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-light bg-dark center-block text-center">
+      Copyright &copy;
+      <div>
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
