@@ -15,6 +15,7 @@ import SignUp from "./components/SignUp";
 import { useState } from "react";
 import Toggle from "./components/Navbar/Toggle";
 import SideMenu from "./components/Navbar/SideMenu";
+import Id from "./components/Id";
 
 function App() {
   const [navToggled, setNavToggled] = useState(false);
@@ -35,6 +36,7 @@ function App() {
         <Route path="/signin" exact element={<LoginForm />} />
         <Route path="/signup" exact element={<SignUp />} />
       </Switch>
+      <Id />
     </Router>
   );
 }
