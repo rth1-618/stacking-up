@@ -4,14 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3.a | setInterval</title>
+    <title>setInterval & JS class</title>
+    <style>
+      input {
+        margin: 3px 0;
+      }
+    </style>
   </head>
   <body>
+    <div
+      style="
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        font-size: larger;
+        -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+        font-weight: 800;
+        margin: 30px;
+      "
+    >
+      20CS093_Parth Tandel
+    </div>
     <div class="app" style="text-align: center">
       <h1 id="head1">This is heading 1!</h1>
       <h2 id="head2">This is heading 2!!</h2>
       <button onclick="changeColor()">Start</button>
     </div>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <h3>Student Class Form</h3>
+    <form name="studentForm">
+      <label for="rno">Enter Roll No. </label>
+      <input type="text" id="rno" name="rno" value="" /><br />
+      <label for="fname">Enter First Name</label>
+      <input type="text" id="fname" name="fname" value="" /><br />
+      <label for="lname">Enter Last Name</label>
+      <input type="text" id="lname" name="lname" value="" /><br />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    <div id="stuData"></div>
     <script src="index.js"></script>
   </body>
 </html>
