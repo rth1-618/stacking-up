@@ -25,6 +25,9 @@ const SideMenu = ({ alterToggle }) => {
       <NavBtnLink to="signin" onClick={alterToggle}>
         Sign In
       </NavBtnLink>
+      <NavBtnLink to="todo" onClick={alterToggle}>
+        Todo List
+      </NavBtnLink>
 
       {/* <StyledLink to="/signin">Sign In</StyledLink> */}
       <CloseToggle onClick={alterToggle} />

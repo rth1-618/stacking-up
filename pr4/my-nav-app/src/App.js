@@ -13,9 +13,10 @@ import Product from "./components/Product";
 import LoginForm from "./components/form/LoginForm";
 import SignUp from "./components/SignUp";
 import { useState } from "react";
-import Toggle from "./components/Navbar/Toggle";
+// import Toggle from "./components/Navbar/Toggle";
 import SideMenu from "./components/Navbar/SideMenu";
 import Id from "./components/Id";
+import TodoList from "./components/todo/TodoList";
 
 function App() {
   const [navToggled, setNavToggled] = useState(false);
@@ -34,6 +35,7 @@ function App() {
         <Route path="/services" exact element={<Services />} />
         <Route path="/product" exact element={<Product />} />
         <Route path="/signin" exact element={<LoginForm />} />
+        <Route path="/todo" exact element={<TodoList />} />
         <Route path="/signup" exact element={<SignUp />} />
       </Switch>
       <Id />

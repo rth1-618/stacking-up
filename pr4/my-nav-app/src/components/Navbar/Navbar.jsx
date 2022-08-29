@@ -30,6 +30,11 @@ const Navbar = ({ alterToggle }) => {
         <NavBtn>
           <NavBtnLink to="/signin">Sign In</NavBtnLink>
         </NavBtn>
+        <NavBtn>
+          <NavBtnLink to="/todo" style={{ backgroundColor: "#5f009d" }}>
+            Todo List
+          </NavBtnLink>
+        </NavBtn>
       </Nav>
     </>
   );
