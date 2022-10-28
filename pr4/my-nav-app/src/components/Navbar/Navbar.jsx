@@ -16,7 +16,7 @@ const Navbar = ({ alterToggle }) => {
       <Nav>
         <NavLink to="/">
           <img src={logo} alt="logo" height="40px" width="40px" />
-          Parth
+
           {/* <h1>Logo</h1> */}
         </NavLink>
         <Toggle alterToggle={alterToggle} />
