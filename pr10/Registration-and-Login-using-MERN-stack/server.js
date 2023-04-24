@@ -21,12 +21,15 @@ const dbURL = "mongodb://localhost:27017/mern-auth";
 
 //connect to MongoDB
 mongoose
-  .connect("paste mongo url here", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  })
+  .connect(
+    "mongodb+srv://parth:parth@cluster0.8p3ny7t.mongodb.net/?retryWrites=true&w=majoritye",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+    }
+  )
   .then(() => console.log("MongoDB successfully connected"))
   .catch((err) => console.log(err));
 
